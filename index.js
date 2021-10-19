@@ -114,8 +114,8 @@ function addEngineer() {
       },
       {
         type: "input",
-        message: "What is your office number?",
-        name: "officeNumber",
+        message: "What is your GitHub username?",
+        name: "officeNumber"
       },
     ])
     .then(({ name, id, email, officeNumber }) => {
