@@ -11,55 +11,6 @@ const outputPath = path.join(outputDirectory, "team.html");
 
 const team = [];
 
-// function userQuestions() {
-//   inquirer
-//     .prompt([
-//       {
-//         type: "list",
-//         message: "Select type of team member to add.",
-//         name: "selections",
-//         choices: [
-//           "Add Intern",
-//           "Add Manager",
-//           "Add Engineer",
-//           "No team members left to add",
-//         ],
-//       },
-//     ])
-//     .then((ans) => {
-//       switch (ans.selections) {
-//         case "Add Intern":
-//           console.log("Intern added!");
-//           addIntern();
-//           break;
-
-//         case "Add Manager":
-//           console.log("Manager added!");
-//           addManager();
-//           break;
-
-//         case "Add Engineer":
-//           console.log("Engineer added!");
-//           addEngineer();
-//           break;
-
-//         case "No team members left to add":
-//           console.log("Team building complete!");
-//           console.log(`${team}`);
-//           console.log(team[0]);
-//           // team.forEach((team) => {
-//             console.log(team.role + " role");
-//           });
-//           generateHTML();
-//           break;
-
-//         default:
-//           console.log("See ya!");
-//           break;
-//       }
-//     });
-// }
-
 function addManager() {
     inquirer
     .prompt([
@@ -200,6 +151,5 @@ function buildTeam() {
 }
 
 userQuestions();
-// .then(ans)
-// fs.writeFile(`index(${team}).html`, generateHTML);
+
 
